@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gateway-provider" />
-        <module name="rabbitMQ" />
-        <module name="gateway-consumer" />
-        <module name="sumeng-gateway-server" />
+        <module name="rabbitmq-producer" />
         <module name="eureka-server-gateway" />
+        <module name="gateway-consumer" />
+        <module name="rabbitmq-consumer" />
+        <module name="sumeng-gateway-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,8 @@
       <module name="gateway-consumer" target="1.8" />
       <module name="gateway-provider" target="1.8" />
       <module name="rabbitMQ" target="1.5" />
+      <module name="rabbitmq-consumer" target="1.8" />
+      <module name="rabbitmq-producer" target="1.8" />
       <module name="sumeng-gateway-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>

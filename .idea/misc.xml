@@ -7,10 +7,14 @@
         <option value="$PROJECT_DIR$/springcloud-rabbitMQ/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitMQ/pom.xml" />
         <option value="$PROJECT_DIR$/geatway/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitMQ/rabbit-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

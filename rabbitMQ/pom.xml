@@ -6,7 +6,12 @@
 
     <groupId>com.sumeng.rabbitmq</groupId>
     <artifactId>rabbitMQ</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>rabbitmq-consumer</module>
+        <module>rabbitmq-producer</module>
+    </modules>
 
 
 </project>

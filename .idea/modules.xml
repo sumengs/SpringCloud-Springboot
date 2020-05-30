@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka/springcloud-eureka.iml" filepath="$PROJECT_DIR$/springcloud-eureka/springcloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/eureka-server-gateway/eureka-server-gateway.iml" filepath="$PROJECT_DIR$/gateway/eureka-server-gateway/eureka-server-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway-consumer/gateway-consumer.iml" filepath="$PROJECT_DIR$/gateway/gateway-consumer/gateway-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway-provider/gateway-provider.iml" filepath="$PROJECT_DIR$/gateway/gateway-provider/gateway-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/sumeng-gateway-server/sumeng-gateway-server.iml" filepath="$PROJECT_DIR$/gateway/sumeng-gateway-server/sumeng-gateway-server.iml" />
     </modules>
   </component>
 </project>

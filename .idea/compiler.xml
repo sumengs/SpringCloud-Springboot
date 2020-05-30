@@ -6,11 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-eureka" />
+        <module name="gateway-provider" />
+        <module name="rabbitMQ" />
+        <module name="gateway-consumer" />
+        <module name="sumeng-gateway-server" />
+        <module name="eureka-server-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springcloud-eureka" target="1.5" />
+      <module name="eureka" target="1.5" />
+      <module name="eureka-server-gateway" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="gateway-consumer" target="1.8" />
+      <module name="gateway-provider" target="1.8" />
+      <module name="rabbitMQ" target="1.5" />
+      <module name="sumeng-gateway-server" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-server-gateway" options="-parameters" />
+      <module name="gateway-consumer" options="-parameters" />
+      <module name="gateway-provider" options="-parameters" />
+      <module name="sumeng-gateway-server" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -6,21 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gateway-provider" />
-        <module name="rabbitmq-producer" />
-        <module name="eureka-server-gateway" />
-        <module name="gateway-consumer" />
-        <module name="rabbitmq-consumer" />
+        <module name="producer-springboot" />
         <module name="sumeng-gateway-server" />
+        <module name="gateway-provider" />
+        <module name="eureka-server-gateway" />
+        <module name="rabbitmq-producer" />
+        <module name="rabbitmq-consumer" />
+        <module name="consumer-springboot" />
+        <module name="gateway-consumer" />
+        <module name="elasticsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consumer-springboot" target="1.8" />
+      <module name="elasticsearch" target="1.5" />
       <module name="eureka" target="1.5" />
       <module name="eureka-server-gateway" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="gateway-consumer" target="1.8" />
       <module name="gateway-provider" target="1.8" />
-      <module name="rabbitMQ" target="1.5" />
+      <module name="producer-springboot" target="1.8" />
+      <module name="rabbitMQ" target="1.8" />
       <module name="rabbitmq-consumer" target="1.8" />
       <module name="rabbitmq-producer" target="1.8" />
       <module name="sumeng-gateway-server" target="1.8" />
@@ -28,9 +34,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-springboot" options="-parameters" />
       <module name="eureka-server-gateway" options="-parameters" />
       <module name="gateway-consumer" options="-parameters" />
       <module name="gateway-provider" options="-parameters" />
+      <module name="producer-springboot" options="-parameters" />
+      <module name="rabbitmq-consumer" options="-parameters" />
+      <module name="rabbitmq-producer" options="-parameters" />
       <module name="sumeng-gateway-server" options="-parameters" />
     </option>
   </component>

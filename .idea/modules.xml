@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQ/consumer-springboot/consumer-springboot.iml" filepath="$PROJECT_DIR$/rabbitMQ/consumer-springboot/consumer-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/eureka-server-gateway/eureka-server-gateway.iml" filepath="$PROJECT_DIR$/gateway/eureka-server-gateway/eureka-server-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway-consumer/gateway-consumer.iml" filepath="$PROJECT_DIR$/gateway/gateway-consumer/gateway-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway-provider/gateway-provider.iml" filepath="$PROJECT_DIR$/gateway/gateway-provider/gateway-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQ/producer-springboot/producer-springboot.iml" filepath="$PROJECT_DIR$/rabbitMQ/producer-springboot/producer-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/rabbitmq-producer.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/rabbitmq-producer.iml" />

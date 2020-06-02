@@ -5,5 +5,11 @@
     <file url="file://$PROJECT_DIR$/gateway/gateway-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/gateway-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/sumeng-gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ/consumer-springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ/producer-springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -166,3 +166,11 @@ connection.close();
 | 特点       |          |          | 所有对接都收到消息 |                  | #:多个匹配，*单个匹配 |
 
      
+#### RabbitMQ 工作模式
+
+1. 简单模式（hello world 模式）
+2. work queues
+3. Publish/Subscribe发布订阅模式
+4. Routing路由模式
+5. Topic主题模式
+6. RPC远程调用模式

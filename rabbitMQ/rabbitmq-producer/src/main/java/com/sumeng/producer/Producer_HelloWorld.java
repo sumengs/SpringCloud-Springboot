@@ -19,7 +19,7 @@ public class Producer_HelloWorld {
         //1. 创建连接工程
         ConnectionFactory factory = new ConnectionFactory();
         //2. 设置参数
-        factory.setHost("localhost");
+        factory.setHost("192.168.26.61");
         factory.setPort(5672);
         factory.setVirtualHost("/");
         factory.setUsername("guest");

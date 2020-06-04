@@ -15,7 +15,7 @@ public class Consumer_Queues_2 {
         //1. 创建连接工程
         ConnectionFactory factory = new ConnectionFactory();
         //2. 设置参数
-        factory.setHost("localhost");
+        factory.setHost("192.168.26.61");
         factory.setPort(5672);
         factory.setVirtualHost("/");
         factory.setUsername("guest");
@@ -65,6 +65,7 @@ public class Consumer_Queues_2 {
             }
         };
 
-        channel.basicConsume("work_queues",true,consumer);
+        channel.basicConsume("work_queues", true, consumer);
     }
 }
+

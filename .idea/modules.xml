@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitmq-consumer/rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/rabbitmq-producer.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitmq-producer/rabbitmq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQ/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/rabbitMQ/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQ/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" filepath="$PROJECT_DIR$/rabbitMQ/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/sumeng-gateway-server/sumeng-gateway-server.iml" filepath="$PROJECT_DIR$/gateway/sumeng-gateway-server/sumeng-gateway-server.iml" />
     </modules>
   </component>

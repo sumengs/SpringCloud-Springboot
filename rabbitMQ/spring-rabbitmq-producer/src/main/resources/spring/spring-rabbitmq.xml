@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xmlns:rebbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath:properties/rabbitmq.properties"/>
+
+    <!--定义RabbitMQ connectionFactory-->
+    <rabbit:connection-factory id="connection-factory"
+                               host="${rabbitmq.host}"
+                               port="${rabbitmq.port}"
+                               username="${rabbitmq.username}"
+                               password="${rabbitmq.password}"
+                               virtual-host="${rabbitmq.virtual-host}"/>
+
+    <!--定义管理交换机、队列-->
+    <rabbit:admin connection-factory="connection-factory"/>
+
+    <!--定义持久化队列，不存在则自动创建；不绑定到交换机则绑定到默认交换机，默认交换机类型为direct，名字为：""，路由建为队列名称-->
+    <rabbit:queue id="spring_queue" name="spring_queue" auto-declare="true"/>
+
+
+    <!--广播；所有队列都能收到消息-->
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_fanout_queue_1" name="spring_fanout_queue_1" auto-declare="true"/>
+
+    <!--定义广播交换机中的持久化队列，不存在则自动创建-->
+    <rabbit:queue id="spring_fanout_queue_2" name="spring_fanout_queue_2" auto-declare="true"/>
+
+    <!--定义广播类型交换机，并绑定上述两个队列-->
+    <rabbit:fanout-exchange id="spring_fanout_exchange" name="spring_fanout_exchange" auto-declare="true">
+        <rabbit:bindings>
+            <rabbit:binding queue="spring_fanout_queue_1"/>
+            <rabbit:binding queue="spring_fanout_queue_2"/>
+        </rabbit:bindings>
+
+    </rabbit:fanout-exchange>
+
+
+
+    <!--定义RabbitTemplate 对象操作可以在代码中方便发送消息-->
+    <rebbit:template id="rabbitTemplate" connection-factory="connection-factory"/>
+</beans>

@@ -11,7 +11,7 @@ public class Consumer_PubSub2 {
         //1.创建连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         //2. 设置参数
-        factory.setHost("localhost");//ip  默认值 localhost
+        factory.setHost("192.168.26.61");//ip  默认值 localhost
         factory.setPort(5672); //端口  默认值 5672
         factory.setVirtualHost("/");//虚拟机 默认值/
         factory.setUsername("guest");//用户名 默认 guest
